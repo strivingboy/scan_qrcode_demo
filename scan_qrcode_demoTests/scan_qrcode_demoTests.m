@@ -2,7 +2,7 @@
 //  scan_qrcode_demoTests.m
 //  scan_qrcode_demoTests
 //
-//  Created by hailong on 14/11/3.
+//  Created by strivingboy on 14/11/3.
 //
 //
 

@@ -1,22 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6d-GU-fqE">
+                                <rect key="frame" x="105" y="40" width="110" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSystemLight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fpL-tx-io5"/>
+                                    <action selector="startScanner:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yi4-Lw-rml"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g37-VY-YUB">
+                                <rect key="frame" x="105" y="502" width="110" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startScanner:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cln-Et-Lcb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtF-aO-Dhl">
+                                <rect key="frame" x="42" y="101" width="237" height="284"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="z6d-GU-fqE" secondAttribute="bottom" constant="498" id="7Bk-Mx-HbJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DtF-aO-Dhl" secondAttribute="trailing" constant="25" id="Edy-N0-nmb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z6d-GU-fqE" secondAttribute="trailing" constant="89" id="Mjw-DR-SA7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="g37-VY-YUB" secondAttribute="bottom" constant="36" id="O5M-9e-BZC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g37-VY-YUB" secondAttribute="trailing" constant="89" id="Rj8-zv-VAd"/>
+                            <constraint firstItem="z6d-GU-fqE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="89" id="VkL-CJ-REH"/>
+                            <constraint firstAttribute="centerY" secondItem="DtF-aO-Dhl" secondAttribute="centerY" constant="41" id="afV-uN-Nly"/>
+                            <constraint firstItem="DtF-aO-Dhl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="81" id="bdt-1D-mCO"/>
+                            <constraint firstItem="g37-VY-YUB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="482" id="gOt-vb-UpL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DtF-aO-Dhl" secondAttribute="bottom" constant="183" id="pTj-hQ-fid"/>
+                            <constraint firstItem="DtF-aO-Dhl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="26" id="qBB-4L-52v"/>
+                            <constraint firstItem="g37-VY-YUB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="89" id="tMr-dm-6kY"/>
+                            <constraint firstItem="z6d-GU-fqE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="x1p-jx-6dG"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="button" destination="g37-VY-YUB" id="XRk-qW-DYJ"/>
+                        <outlet property="lightButton" destination="z6d-GU-fqE" id="N1V-8j-Tjh"/>
+                        <outlet property="sanFrameView" destination="DtF-aO-Dhl" id="4Fd-xo-VmN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

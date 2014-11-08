@@ -14,6 +14,7 @@
 		C638A72A1A07B3960061DCB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C638A7291A07B3960061DCB1 /* Images.xcassets */; };
 		C638A72D1A07B3960061DCB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C638A72B1A07B3960061DCB1 /* LaunchScreen.xib */; };
 		C638A7391A07B3960061DCB1 /* scan_qrcode_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C638A7381A07B3960061DCB1 /* scan_qrcode_demoTests.m */; };
+		C638A7431A07B5800061DCB1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C638A7421A07B5800061DCB1 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		C638A7321A07B3960061DCB1 /* scan_qrcode_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scan_qrcode_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C638A7371A07B3960061DCB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C638A7381A07B3960061DCB1 /* scan_qrcode_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scan_qrcode_demoTests.m; sourceTree = "<group>"; };
+		C638A7421A07B5800061DCB1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C638A7431A07B5800061DCB1 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		C638A7101A07B3960061DCB1 = {
 			isa = PBXGroup;
 			children = (
+				C638A7421A07B5800061DCB1 /* AVFoundation.framework */,
 				C638A71B1A07B3960061DCB1 /* scan_qrcode_demo */,
 				C638A7351A07B3960061DCB1 /* scan_qrcode_demoTests */,
 				C638A71A1A07B3960061DCB1 /* Products */,
@@ -343,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = scan_qrcode_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = scan_qrcode_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
